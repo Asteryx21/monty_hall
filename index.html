@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Monty Hall Game</title>
+</head>
+<body>
+    <div class="game">
+        <div id="intro">
+            <p>Instructions</p>
+            <table class="rules">
+                <tbody>
+                    <tr class="rule-row">
+                        <td class="rule-number">1.</td>
+                        <td class="rule">There are 3 doors. Behind one door,there is 💰 and behind the others, 🐴</td>
+                    </tr>
+                    <tr class="rule-row">
+                        <td class="rule-number">2.</td>
+                        <td class="rule">Your goal is to pick a door which have the 💰</td>
+                    </tr>
+                    <tr class="rule-row">
+                        <td class="rule-number">3.</td>
+                        <td class="rule">When you select a door, the computer reveals another door which has a 🐴</td>
+                    </tr>
+                    <tr class="rule-row">
+                        <td class="rule-number">4.</td>
+                        <td class="rule">Now, you can either switch to another closed door or go with your initial choice</td>
+                    </tr>
+                    <tr class="rule-row">
+                        <td class="rule-number">5.</td>
+                        <td class="rule">Play wisely and win!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="doors"></div>
+        <div id="instructions"></div>
+        <div class="buttons">
+            <button id="switchButton" style="display: none;">Switch</button>
+            <button id="stayButton" style="display: none;">Stay</button>
+            <button id="playAgainButton" style="display: none;">Play Again</button>
+        </div>
+        <p id="stats"></p>
+    </div>
+    <button id="reset" onclick="resetStats()">Reset Stats</button>
+    <script src="game.js"></script>
+</body>
+</html>

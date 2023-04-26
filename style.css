@@ -1,0 +1,40 @@
+* {
+  font-family: 'Source Code Pro', monospace;
+}
+.game {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+#instructions {
+  margin: 10px;
+  font-size: 16pt;
+}
+#doors {
+  margin-top: 5em;
+  display: flex;
+}
+.door {
+  background-color: brown;
+  width: 100px;
+  height: 200px;
+  border: 2px solid black;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 200px;
+  cursor: pointer;
+}
+button {
+  font-size: 32pt;
+}
+#stats {
+  margin-left: 10px;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+#reset{
+  font-size: 16pt;
+}
